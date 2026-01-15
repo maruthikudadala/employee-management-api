@@ -47,8 +47,19 @@ Step 4: Configure Database
 python manage.py makemigrations
 python manage.py migrate
 
+
 Step 5: Create Superuser 
 python manage.py createsuperuser
 
 Base URL
 http://127.0.0.1:8000/api/
+
+
+##API Endpoints
+Employee Management
+Method	  Endpoint	          Description	 
+POST	    /employees/	        Create new employee	
+GET	      /employees/	        List all employees	
+GET	      /employees/{id}/	  Get specific employee	
+PUT	      /employees/{id}/	  Update employee	
+DELETE	  /employees/{id}/	  Delete employee	
